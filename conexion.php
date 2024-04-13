@@ -1,8 +1,8 @@
 <?php
 // Datos de conexión a la base de datos
 $servername = "localhost";
-$username = "tu_usuario";
-$password = "tu_contraseña";
+$username = "root";
+$password = "";
 $dbname = "BDRafael";
 
 // Crear conexión
