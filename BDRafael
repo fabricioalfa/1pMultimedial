@@ -1,0 +1,33 @@
+-- Crear la base de datos con el nombre de Rafael (BDRafael)
+CREATE DATABASE BDRafael;
+
+-- Usar la base de datos creada
+USE BDRafael;
+
+-- Crear la tabla Persona
+CREATE TABLE Persona (
+    id_persona INT PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(50),
+    apellido VARCHAR(50),
+    edad INT,
+    direccion VARCHAR(100)
+);
+
+-- Crear la tabla Cuenta Bancaria
+CREATE TABLE CuentaBancaria (
+    id_cuenta INT PRIMARY KEY AUTO_INCREMENT,
+    id_persona INT,
+    numero_cuenta VARCHAR(20),
+    saldo DECIMAL(10, 2),
+    FOREIGN KEY (id_persona) REFERENCES Persona(id_persona)
+);
+
+-- Crear la tabla Transacciones Bancarias
+CREATE TABLE TransaccionesBancarias (
+    id_transaccion INT PRIMARY KEY AUTO_INCREMENT,
+    id_cuenta INT,
+    tipo_transaccion VARCHAR(10),
+    monto DECIMAL(10, 2),
+    fecha_transaccion DATE,
+    FOREIGN KEY (id_cuenta) REFERENCES CuentaBancaria(id_cuenta)
+);
