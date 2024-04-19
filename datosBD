@@ -1,0 +1,18 @@
+-- Insertar datos de personas
+INSERT INTO Persona (nombre, apellido, edad, direccion) VALUES
+('Rafael', 'González', 35, 'Calle 123, Ciudad XYZ'),
+('María', 'López', 28, 'Avenida Principal, Ciudad ABC'),
+('Juan', 'Martínez', 42, 'Calle Central, Ciudad XYZ');
+
+-- Insertar datos de cuentas bancarias
+INSERT INTO CuentaBancaria (id_persona, numero_cuenta, saldo) VALUES
+(1, '123456789', 1500.00),
+(2, '987654321', 2500.00),
+(3, '555555555', 3500.00);
+
+-- Insertar algunas transacciones bancarias
+INSERT INTO TransaccionesBancarias (id_cuenta, tipo_transaccion, monto, fecha_transaccion) VALUES
+(1, 'Depósito', 500.00, '2024-04-12'),
+(1, 'Retiro', 200.00, '2024-04-10'),
+(2, 'Depósito', 1000.00, '2024-04-11'),
+(3, 'Retiro', 300.00, '2024-04-10');
