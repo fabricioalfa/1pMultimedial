@@ -1,0 +1,62 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Estilos de las cuentas bancarias */
+.cuenta {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+.cuenta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cuenta h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.cuenta p {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.cuenta p strong {
+    color: #000;
+}
+
+/* Colores adicionales */
+.cuenta:nth-child(odd) {
+    background-color: #e6f2ff; /* Azul claro */
+}
+
+.cuenta:nth-child(even) {
+    background-color: #e6ffe6; /* Verde claro */
+}
+
+.cuenta:hover {
+    background-color: #ffebcc; /* Amarillo claro */
+}
